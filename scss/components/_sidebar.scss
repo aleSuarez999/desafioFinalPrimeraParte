@@ -1,0 +1,35 @@
+
+.main__sidebar{
+    background-color: white;
+    display: flex;
+    .sidebar__menu{
+        width: 35%; // averiguar si es correcto
+        
+        text-align: center; // centro el titulo
+            .sidebar__list {
+                padding: 0;
+                text-align: left; // izq los items
+                .sidebar__item{
+                    list-style: none;
+                    padding: 0.2rem ;
+                    margin-bottom: 0px;
+                    .sidebar__link{
+                        display: block;
+                        text-decoration: none;
+                        background-color: $secondary-color;
+                        width: 80%;
+                        color: white;
+                        
+                        text-transform: capitalize;
+                        padding: 10px;
+
+                        &:hover{
+                            background-color: $primary-color;
+                        }
+                        
+                        
+                    }
+                }
+            }
+        }    
+}

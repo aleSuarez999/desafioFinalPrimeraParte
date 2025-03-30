@@ -1,0 +1,7 @@
+@mixin width_33_percent () {
+    display: flex;
+    width: 33.33%;
+    align-items: center;
+    justify-content: space-between;
+
+}

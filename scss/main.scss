@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+@import "utils/variables";
+@import "base/base";
+@import "utils/mixins";
+@import "fonts/fonts";
+@import "components/buttons";
+@import "components/nav";
+@import "components/cards";
+@import "components/sidebar";
+
+.header__container{
+    display: flex;
+    background-color: $mustard;
+    border-radius: 25px;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-evenly;
+    
+       
+    .img--borderRadius{
+        border-radius:25%;
+        border: 2px dotted #524242;
+        box-shadow: 2px -2px 7px, -2px -5px black;
+    }
+    .img {
+        display: flex;
+        height: 150px;
+        
+    }
+    h1 {
+        display: flex;
+        font-family: "Starshines";
+        font-size: 4.5rem;
+        text-shadow: 2px -2px 7px, -2px -5px black;
+        color: lighten($color: $font_color_primary, $amount: 60);
+        
+    }
+    
+}
+
+.body__container{
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 5px;
+    box-sizing:border-box;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    
+    /*background-image: url(/img/fondo.PNG);
+    background-size: 200px;*/
+    
+}
+
+
+.main{
+    margin: auto;
+    width: 95%;
+    width: 65vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.main__container{
+    width: 90vw;
+    
+    display: flex;
+    align-items: start;
+    padding: 1rem;
+    border-radius: 10px 0px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: $secondary-color;
+    
+}
+

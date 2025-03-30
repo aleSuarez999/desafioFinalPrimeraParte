@@ -1,0 +1,15 @@
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    &-primary {
+        /* creo una clase btn-primary*/
+        border: $btn-input-border-width $btn-input-border-style $secondary-color;
+        color: $primary-color;
+        background-color: lighten($color: $primary-color, $amount: 75);
+        /*  */
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: $secondary-color;
+    }
+}

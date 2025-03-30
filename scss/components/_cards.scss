@@ -1,0 +1,31 @@
+.card{
+    width: 30%;
+    border: 1px solid grey;
+    border-radius: 25px 25px 10px 10px;
+    background-color: lighten($color: $secondary-color, $amount: 30);
+    overflow: hidden;
+    .card__img--top{
+        width: 100%;
+        
+        border: 1px dotted blue;
+        align-items: start;
+        
+
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        height: 13rem;   
+        text-align: center;
+    }
+    .card__title{
+        height: 2rem;
+    }
+
+    &__btn--format
+    {
+        width: 50%;
+        align-self: center;
+    }
+
+}
