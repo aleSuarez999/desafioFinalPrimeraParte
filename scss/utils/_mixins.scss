@@ -1,7 +1,14 @@
-@mixin width_33_percent () {
-    display: flex;
-    width: 33.33%;
-    align-items: center;
-    justify-content: space-between;
+@mixin respond-to ($resolution) {
+    @if $resolution == mobile {
+        @media (max-width: 860px) {
+            @content; /*aplicar el contenido del mixin*/
+        }
+    }
+
+    @if $resolution == desktop {
+        @media (min-width: 860px) {
+            @content;
+        }
+    }
 
 }

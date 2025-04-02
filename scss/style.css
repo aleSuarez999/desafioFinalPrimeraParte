@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@font-face {
+  font-family: "Starshines";
+  src: url("fonts/Starshines.otf");
+}
+@font-face {
+  font-family: "Starshines";
+  src: url("fonts/Starshines.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  width: 80vw;
+  margin: auto;
+  background-color: #f9e6d5;
+}
+
+.header__container {
+  border: 5px solid black;
+  display: flex;
+  align-items: center;
+}
+.header__container-img {
+  border: 1px dotted blue;
+  border-radius: 10px;
+}
+.header__container-h1 {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid yellow;
+  width: 100%;
+  font-family: "Starshines";
+  font-size: 3.5rem;
+  font-weight: 200;
+  text-shadow: 2px -2px 7px, -2px -5px black;
+  color: #a2a1c6;
+}
+.header__container-nav {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  margin: auto;
+}
+.header__container-nav li {
+  list-style-type: none;
+}
+.header__container-nav a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+.header__container-nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 100%;
+  min-width: 40%;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.main {
+  width: 80vw;
+  height: 75vh;
+  border: 1px solid black;
+}/*# sourceMappingURL=style.css.map */

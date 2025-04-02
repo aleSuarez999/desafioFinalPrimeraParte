@@ -1,28 +1,22 @@
 .nav{
-    display: flex;
-    margin: 0;
-    //height: 100px;
-    display: flex;
-    .nav__list{
-        display: flex;
-        list-style: none;
-        align-items: center;
+    //display: flex;
+    @include respond-to (desktop) {
+    
         width: 100%;
-        
-        margin: 0;
-        
-        min-width: 50%;
-        justify-content: space-around;
-        a {
-            text-decoration: none;
-            background-color: lighten($color: $font_color_primary, $amount: 80);
-            border-radius: 10px 10px 0 0;
-            padding: 0.5rem 5rem;
-           }
-        .sidebar__item
-        {
-            
-
+        .nav__list{
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            justify-content: space-around;
+            &-link {
+                text-decoration: none;
+                font-variant: small-caps;
+                background-color: lighten($color: $font_color_primary, $amount: 80);
+                border-radius: 10px 10px 0 0;
+                padding: 0.5rem 2rem;
+            }
         }
-    }
+    };
+
 }
+

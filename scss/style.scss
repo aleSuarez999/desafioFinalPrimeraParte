@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+@import "fonts/fonts";
+
+*{
+    margin:0; 
+    padding: 0;
+    box-sizing: content-box;
+
+}
+
+body{
+    width: 80vw;
+    margin: auto;
+    background-color: #F9E6D5ff;
+}
+.header__container{
+    border: 5px solid black;
+    display: flex;
+    align-items: center; // alineacion vertical h1
+    // esto es para alinear en partes iguales 
+    // el logo el titulo y el nav    
+    &-img{
+        border: 1px dotted blue;
+        border-radius: 10px;
+    }
+    
+    &-h1 {
+        display: flex;
+        justify-content: space-around; // centro el h1
+        border: 1px solid yellow; // revision
+        width: 100%;
+        font-family: "Starshines";
+        font-size: 3.5rem;
+        font-weight: 200;
+        text-shadow: 2px -2px 7px, -2px -5px black;
+        color: lighten($color:  #a2a1c6, $amount: 0);
+    }
+  
+    &-nav{
+        width: 60%;
+        display: flex;
+        justify-content: end;
+        margin: auto;
+        //border: 1px solid red;
+        
+        
+        & li {
+            
+            list-style-type: none;
+        }
+
+        & a{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+            padding: 1rem;
+            text-decoration: none;
+        }
+
+        & ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 1rem ;
+            //background-color: aqua;
+            //border: 1px solid white;
+            width: 100%; // ocupo todo el nav
+            min-width: 40%;
+            justify-content: space-between;
+            align-items: end;
+        }
+    }
+}
+
+.main{
+    width: 80vw;
+    height: 75vh;
+    border: 1px solid black;
+}
