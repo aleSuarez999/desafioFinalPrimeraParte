@@ -2,6 +2,9 @@
 .main__sidebar{
     background-color: white;
     display: flex;
+//    background-image: url(/img/fondo01.png); horrible
+//    background-size: 200px;
+
     
     .sidebar__menu{
         width: 35%; // averiguar si es correcto
@@ -58,10 +61,10 @@
     &-img{
          width: 8vw;
          overflow: hidden;
-         @include respond-to (mobile) {
+      //   @include respond-to (mobile) {
 
-            display:none;
-            }
+       //     display:none;
+      //      }
     
       }
 

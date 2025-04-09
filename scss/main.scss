@@ -31,26 +31,26 @@
         
     }
     h1 {
-
-        @include respond-to (mobile) {
+/*
+      //  @include respond-to (mobile) {
 
         display: flex;
         font-family: "Starshines";
         font-size: 1.5rem;
         text-shadow: 2px -2px 7px, -2px -5px black;
         color: lighten($color: #551055, $amount: 0);
-        display:none;
+       display:none;
         }
 
-        @include respond-to (desktop) {
-
+      //  @include respond-to (desktop) {
+*/
             display: flex;
             font-family: "Starshines";
             font-size: 3.5rem;
             text-shadow: 2px -2px 7px, -2px -5px black;
             color: lighten($color: #551055, $amount: 0);            
 
-        }
+        //}
         
 
     }
@@ -72,8 +72,8 @@
     width: 100%;
     height: 100vh;
     
-    /*background-image: url(/img/fondo.PNG);
-    background-size: 200px;*/
+
+    
     
 }
 
@@ -84,6 +84,8 @@
     height: 100vh;
     justify-content: center;
     /*opacity: 50%;*/
+
+
     
 }
 
@@ -92,7 +94,7 @@
     
     display: flex;
     justify-content:space-around;    
-    
+
     //padding: 1rem;
     border-radius: 10px 0px;
     flex-wrap: wrap;
@@ -105,4 +107,18 @@
     background-size: 150px;
     */
     
+}
+@media (max-width: 768px)
+{
+    nav .nav__list {
+    flex-direction: column;
+    height: auto;
+    padding: auto;
+    height: 8rem;
+    align-items: center;
+    }
+    .nav__list-link{
+        height: 2rem;
+    }
+
 }

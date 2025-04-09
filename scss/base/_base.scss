@@ -2,11 +2,15 @@
     font-size: 14px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: content-box;
+
 }
 body
 {
     margin: auto;
     width: 70vw;
+
     background-image: linear-gradient($almond 35%, $desert-sand 70%);
-    
+//    background-image: url(/img/fondo01.png);
+ //   background-size: 400px;
+
 }
