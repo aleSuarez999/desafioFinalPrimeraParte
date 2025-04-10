@@ -15,9 +15,12 @@
     border-radius: 25px;
     align-items: center;
    
+    border: 1px dotted black; /*remover*/
     justify-content: space-evenly;
     
-       
+    &-title{
+        border: 3px solid red;/*remover*/
+    }
     .img--borderRadius{
         
         border-radius:25%;
@@ -25,39 +28,25 @@
         box-shadow: 1px -1px 5px, 2px -3px grey;
         
     }
+    
     .img {
-        display: flex;
         height: 100px;
-        
     }
     h1 {
-/*
-      //  @include respond-to (mobile) {
-
+    
         display: flex;
         font-family: "Starshines";
-        font-size: 1.5rem;
+        font-size: 3.5rem;
         text-shadow: 2px -2px 7px, -2px -5px black;
-        color: lighten($color: #551055, $amount: 0);
-       display:none;
-        }
-
-      //  @include respond-to (desktop) {
-*/
-            display: flex;
-            font-family: "Starshines";
-            font-size: 3.5rem;
-            text-shadow: 2px -2px 7px, -2px -5px black;
-            color: lighten($color: #551055, $amount: 0);            
-
-        //}
-        
+        color: lighten($color: #551055, $amount: 0);            
+        border: 1px dotted black; /*remover*/
 
     }
     div {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        border: 1px dotted white; /*remover*/
     }
     
 }
